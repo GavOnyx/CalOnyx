@@ -7,3 +7,8 @@ CalOnyx is meant to (eventually) match the PMG app in functionality and usabilit
 It is written in primarily in Python using the Kivy framework, and the KV language.
 Kivy was chosen because of its relatively simple syntax, and its cross platform capabilities.
 Data is stored using YAML.
+
+Dependencies (what I'm using):
+- Python 3.13
+- Kivy 2.3.1
+- YAML 1.2.2
