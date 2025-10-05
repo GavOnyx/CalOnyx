@@ -1,0 +1,12 @@
+x Make a screen (mobile lookin)
+x Add the basic areas (events, menu bar)
+- populate event area with timeline
+- make event area scrollable
+x make tap-to-add event
+- make events align to timeline without overlapping
+- provide way for event data to be added (ModalView? https://kivy.org/doc/stable/api-kivy.uix.modalview.html)
+- store events as YAML files
+- retrieve stored YAML events as events that auto populate the event list
+- make the event list swipeable to different dates
+x Add menu areas that open into separate views
+- Add contact list

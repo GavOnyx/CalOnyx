@@ -1,0 +1,33 @@
+#:kivy 2.3.1
+
+<Root>
+    orientation: 'rl-bt'
+    tab_pos: 'top_mid'
+    do_default_tab: False
+
+    # Home
+    TabbedPanelItem:
+        text: 'Home'
+        Label:
+            text: 'this is the home page'
+
+    # Events
+    TabbedPanelItem:
+        text: 'Events'
+        Label:
+            on_touch_down: root.add_event()
+
+    TabbedPanelItem:
+        text: 'Contacts'
+        ScrollView:
+            do_scroll_x: True
+
+            # Necessary because ScrollView only allows for 1 direct child widget
+            BoxLayout:
+                size_hint_y: None  # Allows scroll in the y direction
+                orientation: 'vertical'
+
+                Button:
+                    text: "+"
+                    padding: 10, 10
+                    size_hint: 0.5, 0.5
